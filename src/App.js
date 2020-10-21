@@ -21,10 +21,7 @@ function App() {
         <div>
           <input value={nombre} onChange={event => cambioDeNombre(event)} />
           <button onClick={()=> setGetData(false)}>A buscar!!</button>
-            {getData ?
-            <p>A buscar pokemones!!!</p>
-            : <CardPokemon nombre={nombre} />}
-
+            {getData ? <p>A buscar pokemones!!!</p> : <CardPokemon nombre={nombre} />}
         </div>
       </section>
     </div>
